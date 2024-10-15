@@ -1,0 +1,49 @@
+.news-content {
+  display: block;
+  box-sizing: border-box;
+  width: 90%;
+  padding: 15px;
+  margin: 4px 0;
+  border: 1px solid #443f36;
+  background-color: transparent;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: scroll;
+  flex-grow: 0;
+  max-height: 400px;
+}
+
+.image-container {
+  width: 100%; /* Ensures container takes up full width of its parent */
+  max-width: 500px; /* Set a maximum width if needed */
+  overflow: hidden; /* Hides any overflow content */
+  position: relative; /* Allows for positioning of child elements */
+}
+
+/* Image Styles */
+.image-container img {
+  width: 100%; /* Scales image to fit the container width */
+  height: auto; /* Maintains the aspect ratio */
+  object-fit: cover; /* Ensures image covers the container fully */
+  border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+p {
+  margin: 0;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+h4 {
+  margin-block-start: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+  .image-container {
+    max-width: 300px;
+  }
+}
